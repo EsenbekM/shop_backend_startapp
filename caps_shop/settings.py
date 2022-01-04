@@ -51,7 +51,16 @@ WSGI_APPLICATION = 'caps_shop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'shop_backend_db',
+        'USER': 'admin',
+        'PASSWORD': '123456',
+        'HOST':'localhost',
+        'PORT': '5432'
+    }
+}
 
 
 # Password validation
